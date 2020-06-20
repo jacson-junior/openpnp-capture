@@ -1,6 +1,7 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C++"
+	cppdialect "C++11"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
