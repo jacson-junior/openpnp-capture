@@ -1,4 +1,4 @@
-project "GLFW"
+project "openpnp-capture"
 	kind "StaticLib"
 	language "C++"
 	cppdialect "C++11"
@@ -12,6 +12,7 @@ project "GLFW"
 		"src/common/**.h",
 		"src/common/**.cpp"
 	}
+
 	filter "system:macosx"
 		pic "On"
 
