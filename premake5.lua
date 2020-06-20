@@ -12,6 +12,11 @@ project "openpnp-capture"
 		"src/common/**.h",
 		"src/common/**.cpp"
 	}
+	
+	includedirs
+    {
+        "include"
+    }
 
 	filter "system:macosx"
 		pic "On"
