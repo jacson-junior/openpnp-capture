@@ -8,9 +8,8 @@ project "openpnp-capture"
 
 	files
 	{
-		"include/openpnp-capture.h",
-		"src/common/**.h",
-		"src/common/**.cpp"
+		"common/**.h",
+		"common/**.cpp"
 	}
 	
 	includedirs
@@ -22,17 +21,11 @@ project "openpnp-capture"
 		pic "On"
 
 		systemversion "latest"
-		staticruntime "On"
 
 		files
 		{
-			"mac/platformcontext.h",
-			"mac/platformcontext.mm",
-			"mac/platformdeviceinfo.h",
-			"mac/platformstream.h",
-			"mac/platformstream.mm",
-			"mac/uvcctrl.h",
-			"mac/uvcctrl.mm",
+			"mac/**.h",
+			"mac/**.mm",
         }
         
         libdirs {
